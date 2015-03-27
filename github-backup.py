@@ -19,7 +19,7 @@ def main():
      
     mainDiv = soup.find("div", {"class": "repo-tab"})
     
-    nextPages = mainDiv.findAll('h3', {'class' : 'repolist-name'})
+    nextPages = mainDiv.findAll('h3', {'class' : 'repo-list-name'})
     
     for page in nextPages:
         href_search = re.search(r'href="([^"]+)"', str(page))
